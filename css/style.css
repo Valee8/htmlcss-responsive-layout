@@ -8,14 +8,24 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* Link */
 a {
     text-decoration: none;
 }
 
+/* Immagini */
 img {
     max-width: 100%;
 }
 
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Header */
 header {
     background-color: #0084FD;
     height: 75px;
@@ -25,6 +35,7 @@ header {
     width: 100%;
 }
 
+/* Logo */
 .logo {
     vertical-align: middle;
 }
@@ -57,15 +68,12 @@ header li a {
     border-radius: 50px;
 }
 
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
+/* Main */
 main {
     margin-top: 125px;
 }
 
+/* Sezioni */
 section {
     margin: 60px 0;
 }
@@ -88,11 +96,20 @@ section:nth-child(even) {
     padding: 0 60px;
 }
 
+/* Prima sezione */
 .list-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 15px;
+}
+
+.card {
+    width: calc(100% / 3 - 15px);
+    background-color: #B5DDFF;
+    border-radius: 20px;
+    color: #5A6E7F;
+    padding: 30px;
 }
 
 .card.big {
@@ -104,14 +121,6 @@ section:nth-child(even) {
 
 .card.big, .card.big + .card {
     margin-bottom: 9px;
-}
-
-.card {
-    width: calc(100% / 3 - 15px);
-    background-color: #B5DDFF;
-    border-radius: 20px;
-    color: #5A6E7F;
-    padding: 30px;
 }
 
 .card:not(.big) {
@@ -166,6 +175,8 @@ section:nth-child(even) {
 .card.big p {
     padding: 20px 0 40px 0;
 }
+
+
 
 .section-left, .section-right {
     width: 50%;

@@ -241,7 +241,6 @@ section:nth-child(even) {
     border-radius: 100px;
 }
 
-
 /* Terza sezione */
 .section-titles {
     text-align: center;
@@ -272,8 +271,8 @@ section:nth-child(even) {
 .testimonials {
     display: flex;
     align-items: center;
-    color: #fff;
     justify-content: space-between;
+    color: #fff;
     margin-top: 20px;
     border-radius: 50px;
     padding: 40px 20px;
@@ -310,8 +309,8 @@ section:nth-child(even) {
 }
 
 .img-testimonials img {
-    margin-top: 33px;
-    transform: scale(1.5);
+    height: 100%;
+    transform: scale(1.5, 1);
 }
 
 /* Quarta sezione */

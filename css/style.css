@@ -190,7 +190,7 @@ section:nth-child(even) {
     width: 50%;
 }
 
-.container.flex.padding {
+.container.flex {
     padding: 100px 130px 30px 130px;
 }
 
@@ -305,21 +305,23 @@ section:nth-child(even) {
     width: 70%;
 }
 
-.testimonials img {
-    width: 250px;
+.img-testimonials {
+    width: 200px; 
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
 }
 
-
-.content-section {
-    /* DEBUG */
-    background-color: red;
-    height: 80px;
+.img-testimonials img {
+    margin-top: 33px;
+    transform: scale(1.5);
 }
 
 /* Quarta sezione */
 .section-white-cards .list-cards {
     gap: 22px;
 }
+
 .section-white-cards .card {
     background-color: #fff;
     width: calc(100% / 3 - 22px);
@@ -340,12 +342,83 @@ section:nth-child(even) {
     padding: 0;
 }
 
-.button.more {
+.button.more, .button.linkedin {
     background-color: #9792E4;
     width: 48%;
     padding: 9px 0;
 }
 
+/* Quinta sezione */
+.section-left {
+    width: 70%;
+}
+
+.section-right {
+    width: 30%;
+
+}
+
+.quotes {
+    position: relative;
+    width: 250px;
+    height: 250px;
+}
+
+.section-left h1 {
+    color: #9792E4;
+    font-size: 55px;
+}
+
+.section-left p {
+    line-height: 30px;
+    padding: 30px 0;
+}
+
+.section-right p {
+    padding: 20px 0;
+    color: #9792E4;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.img-about {
+    width: 250px; 
+    height: 250px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.img-about i {
+    position: absolute; 
+    color: #9792E4; 
+    font-size: 70px; 
+    right: 0; 
+    top: 0;
+}
+
+.button.linkedin {
+    width: 80%;
+    font-weight: normal;
+    letter-spacing: normal;
+}
+
+.button.linkedin i {
+    padding-right: 8px;
+}
+
+.about-us .container.flex {
+    padding: 30px 80px 30px 80px;
+}
+
+
+.content-section {
+    /* DEBUG */
+    background-color: red;
+    height: 80px;
+}
+
+
+/* Footer */
 footer {
     background-color: #333333;
     /* DEBUG */
@@ -357,6 +430,11 @@ footer {
 
     .container.flex {
         flex-wrap: wrap;
+    }
+
+    .about-us .container.flex {
+        gap: 0;
+        padding: 0 30px;
     }
 
     /* Menu */
@@ -390,13 +468,14 @@ footer {
     }
 
     /* Seconda sezione */
-    .container.flex.padding {
+    .container.flex {
         padding: 100px 30px 30px 30px;
     }
 
     .content-left, .content-right {
         width: 100%;
     }
+    
     .content-left img {
         padding: 0 20px;
     }
@@ -408,6 +487,24 @@ footer {
     /* Quarta sezione */
     .section-white-cards .card {
         width: calc(100% / 2 - 15px);
+    }
+
+    .section-left  {
+        width: 60%;
+    }
+
+    .section-right {
+        display: block;
+        margin-left: auto;
+    }
+
+    .section-right p {
+        font-size: 20px;
+    }
+
+    .img-about, .quotes {
+        width: 220px;
+        height: 220px;
     }
 }
 
@@ -427,6 +524,28 @@ footer {
 
     .content-left h2 {
         font-size: 2rem;
+    }
+
+    .section-left h1 {
+        font-size: 45px;
+    }
+
+    .section-left, .section-right {
+        width: 100%;
+    }
+
+    .button.linkedin {
+        width: 50%;
+    }
+
+    .img-about {
+        width: 180px;
+        height: 180px;
+    }
+
+    .quotes {
+        width: 200px;
+        height: 180px;
     }
 
 

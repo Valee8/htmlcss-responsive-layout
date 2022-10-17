@@ -104,9 +104,10 @@ section:nth-child(even) {
     padding: 30px 0;
 }
 
-.container.flex {
+.planning .container {
     display: flex;
     gap: 40px;
+    padding: 100px 130px 30px 130px;
 }
 
 /* Prima sezione */
@@ -188,10 +189,6 @@ section:nth-child(even) {
 /* Seconda sezione */
 .content-left, .content-right {
     width: 50%;
-}
-
-.container.flex {
-    padding: 100px 130px 30px 130px;
 }
 
 .content-left h3 {
@@ -349,32 +346,38 @@ section:nth-child(even) {
 }
 
 /* Quinta sezione */
-.section-left {
-    width: 70%;
+.about-us .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 80px;
 }
 
-.section-right {
+.about-us-left {
+    width: 60%;
+}
+
+.about-us-right {
     width: 30%;
 
 }
 
 .quotes {
     position: relative;
-    width: 250px;
-    height: 250px;
+    max-width: 250px;
+    max-height: 250px;
 }
 
-.section-left h1 {
+.about-us-left h1 {
     color: #9792E4;
     font-size: 55px;
 }
 
-.section-left p {
+.about-us-left p {
     line-height: 30px;
     padding: 30px 0;
 }
 
-.section-right p {
+.about-us-right p {
     padding: 20px 0;
     color: #9792E4;
     font-size: 25px;
@@ -382,10 +385,14 @@ section:nth-child(even) {
 }
 
 .img-about {
-    width: 250px; 
-    height: 250px;
+    max-width: 250px; 
+    max-height: 250px;
     overflow: hidden;
     border-radius: 50%;
+}
+
+.img-about img {
+    vertical-align: bottom;
 }
 
 .img-about i {
@@ -406,17 +413,12 @@ section:nth-child(even) {
     padding-right: 8px;
 }
 
-.about-us .container.flex {
-    padding: 30px 80px 30px 80px;
-}
-
 
 .content-section {
     /* DEBUG */
     background-color: red;
     height: 80px;
 }
-
 
 /* Footer */
 footer {
@@ -428,13 +430,13 @@ footer {
 /* Tablet version */
 @media all and (max-width: 768px) {
 
-    .container.flex {
+    .planning .container {
         flex-wrap: wrap;
+        padding: 0 30px;
     }
 
-    .about-us .container.flex {
-        gap: 0;
-        padding: 0 30px;
+    .about-us .container {
+        padding: 0 40px;
     }
 
     /* Menu */
@@ -489,23 +491,23 @@ footer {
         width: calc(100% / 2 - 15px);
     }
 
-    .section-left  {
+    .about-us-left  {
         width: 60%;
     }
 
-    .section-right {
+    .about-us-right {
         display: block;
         margin-left: auto;
     }
 
-    .section-right p {
+    .about-us-right p {
         font-size: 20px;
     }
 
-    .img-about, .quotes {
-        width: 220px;
-        height: 220px;
+    .button.linkedin {
+        width: 90%;
     }
+
 }
 
 
@@ -522,15 +524,19 @@ footer {
         width: 80%;
     }
 
-    .content-left h2 {
+    .about-us .container {
+        flex-wrap: wrap;
+    }
+
+    .about-us-left h2 {
         font-size: 2rem;
     }
 
-    .section-left h1 {
+    .about-us-left h1 {
         font-size: 45px;
     }
 
-    .section-left, .section-right {
+    .about-us-left, .about-us-right {
         width: 100%;
     }
 
@@ -538,15 +544,29 @@ footer {
         width: 50%;
     }
 
-    .img-about {
-        width: 180px;
-        height: 180px;
+    .testimonials {
+        flex-wrap: wrap;
     }
 
-    .quotes {
-        width: 200px;
-        height: 180px;
+    .text-testimonials {
+        width: 100%;
+        text-align: center;
     }
 
+    .text-testimonials p {
+        padding-top: 10px;
+    }
+
+    .img-testimonials {
+        margin: 0 auto;
+    }
+
+    .button.more {
+        width: 38%;
+    }
+
+    .button.linkedin {
+        width: 50%;
+    }
 
 }

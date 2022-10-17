@@ -106,9 +106,13 @@ section:nth-child(even) {
     gap: 15px;
 }
 
+section:not(:first-child) .container > .list-cards .card {
+    background-color: #fff;
+}
+
 .card {
-    width: calc(100% / 3 - 15px);
     background-color: #B5DDFF;
+    width: calc(100% / 3 - 15px);
     border-radius: 20px;
     color: #5A6E7F;
     padding: 30px;
@@ -241,13 +245,28 @@ section:nth-child(even) {
 }
 
 
-.users {
-    margin-top: 20px;
-    /* DEBUG */
-    height: 80px;
-    background-color: red;
-    border: 2px solid black;
+/* Terza sezione */
+.section-titles {
+    text-align: center;
 }
+
+.testimonials {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    border-radius: 50px;
+    padding: 40px 0;
+    background-color: #9792E4;
+}
+
+.testimonials img {
+    width: 100px;
+    border-radius: 100px;
+}
+
+
+/* Quarta sezione */
 
 .content-section {
     /* DEBUG */
@@ -313,4 +332,35 @@ footer {
     .content-left h2 {
         font-size: 4rem;
     }
+
+    /* Quarta sezione */
+    section:not(:first-child) .container > .list-cards .card {
+        width: calc(100% / 2 - 15px);
+    }
+}
+
+
+/* Mobile version */
+@media all and (max-width: 480px) {
+
+    .card, .card.big {
+        width: 100%;
+    }
+
+    .card.big .img-content img {
+        margin: 0 auto;
+        display: block;
+        width: 80%;
+    }
+
+    .content-left h2 {
+        font-size: 2rem;
+    }
+
+    section:not(:first-child) .container > .list-cards .card {
+        width: 100%;
+    }
+
+
+
 }

@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #0084FD;
+    height: 75px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}

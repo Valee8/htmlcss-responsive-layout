@@ -358,7 +358,6 @@ section:nth-child(even) {
 
 .about-us-right {
     width: 30%;
-
 }
 
 .quotes {
@@ -413,11 +412,61 @@ section:nth-child(even) {
     padding-right: 8px;
 }
 
-
+/* Sesta sezione */
 .content-section {
-    /* DEBUG */
-    background-color: red;
-    height: 80px;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.content-section h5 {
+    color: #cfcef2;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+
+.content-section h2 {
+    padding: 15px 0;
+}
+
+.content-section h1 {
+    color: #FDC15F;
+    font-size: 80px;
+}
+
+.content-section p {
+    width: 50%;
+    margin: 0 auto;
+    line-height: 30px;
+    padding: 20px 0;
+}
+
+.copyright {
+    display: flex;
+    gap: 3px;
+    justify-content: center;
+    font-size: 14px;
+    list-style-type: none;
+    padding-top: 25px;
+}
+
+.copyright a {
+    color: #fff;
+}
+
+.copyright li:last-child a {
+    text-decoration: underline;
+}
+
+.button.get-started {
+    background-color: #fff;
+    color: #9792E4;
+    width: 25%;
+    padding: 25px 0;
+    border-radius: 100px;
+    margin: 0 auto;
+    font-size: 16px;
 }
 
 /* Footer */
@@ -567,6 +616,10 @@ footer {
 
     .button.linkedin {
         width: 50%;
+    }
+
+    .button.get-started {
+        width: 70%;
     }
 
 }

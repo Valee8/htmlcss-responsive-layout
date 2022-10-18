@@ -636,6 +636,10 @@ footer p:last-of-type {
     .card {
         padding: 10px;
     }
+
+    .img-about i {
+        font-size: 50px;
+    }
 } 
 
 @media all and (min-width: 481px) and (max-width: 724px) {

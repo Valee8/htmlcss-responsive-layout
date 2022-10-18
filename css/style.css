@@ -26,7 +26,7 @@ img {
     font-size: 15px;
     letter-spacing: 3px;
     font-weight: bold;
-    display: block;
+    /* display: block; */
 }
 
 
@@ -110,7 +110,7 @@ section:nth-child(even) {
     padding: 100px 130px 30px 130px;
 }
 
-/* Prima sezione */
+/* Prima sezione - card celesti */
 .list-cards {
     display: flex;
     flex-wrap: wrap;
@@ -173,16 +173,17 @@ section:nth-child(even) {
 }
 
 .button.apple {
-    width: 65%;
+    width: 60%; 
     background-color: #0084FD;
     padding: 12px 0;
+    display: block;
 }
 
 .card.big p {
     padding: 20px 0 40px 0;
 }
 
-/* Seconda sezione */
+/* Seconda sezione - primo sfondo viola */
 .content-left, .content-right {
     width: 50%;
 }
@@ -236,7 +237,7 @@ section:nth-child(even) {
     border-radius: 100px;
 }
 
-/* Terza sezione */
+/* Terza sezione - titoli e testimonials */
 .section-titles {
     text-align: center;
 }
@@ -288,43 +289,41 @@ section:nth-child(even) {
     font-weight: bold;
 }
 
-.img-testimonials {
-    width: 30%;
-} 
-
 .text-testimonials {
-    width: 60%;
-} 
+    max-width: 75%;
+}  
 
-.div-img {
+.div-img-testimonials {
     width: 200px; 
     height: 200px;
 }
 
 .img-testimonials img {
     object-fit: cover;
-    width: 100%;
     height: 100%;
     border-radius: 50%;
 }
 
-/* Quarta sezione */
+/* Quarta sezione - lista card bianche */
 .section-white-cards .list-cards {
     gap: 30px;
 }
 
 .section-white-cards .card {
+    text-align: left;
     background-color: #fff;
     width: calc(100% / 3 - 20px);
 }
 
 .section-white-cards .card h2, .section-white-cards .card h4 {
     color: #9792E4;
+}
+
+.section-white-cards .card h2 {
     text-align: left;
 }
 
 .section-white-cards p {
-    text-align: left;
     font-weight: normal;
     padding: 20px 0;
 }
@@ -335,11 +334,13 @@ section:nth-child(even) {
 
 .button.more, .button.linkedin {
     background-color: #9792E4;
-    width: 48%;
-    padding: 9px 0;
 }
 
-/* Quinta sezione */
+.button.more {
+    padding: 9px 40px;
+} 
+
+/* Quinta sezione - about us */
 .about-us .container {
     display: flex;
     justify-content: space-between;
@@ -378,8 +379,6 @@ section:nth-child(even) {
 }
 
 .img-about img {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -393,7 +392,7 @@ section:nth-child(even) {
 }
 
 .button.linkedin {
-    width: 80%;
+    padding: 6px 10px;
     font-weight: normal;
     letter-spacing: normal;
 }
@@ -402,7 +401,7 @@ section:nth-child(even) {
     padding-right: 8px;
 }
 
-/* Sesta sezione */
+/* Sesta sezione - titoli grandi */
 .content-section {
     padding: 20px 0;
     text-align: center;
@@ -429,7 +428,7 @@ section:nth-child(even) {
     width: 50%;
     margin: 0 auto;
     line-height: 30px;
-    padding: 20px 0;
+    padding: 40px 0;
 }
 
 .copyright {
@@ -438,7 +437,7 @@ section:nth-child(even) {
     justify-content: center;
     font-size: 14px;
     list-style-type: none;
-    padding-top: 25px;
+    padding-top: 40px;
 }
 
 .copyright a {
@@ -452,8 +451,7 @@ section:nth-child(even) {
 .button.get-started {
     background-color: #fff;
     color: #9792E4;
-    width: 25%;
-    padding: 25px 0;
+    padding: 25px 50px;
     border-radius: 100px;
     margin: 0 auto;
     font-size: 16px;
@@ -464,7 +462,7 @@ footer {
     background-color: #333333;
     text-align: center;
     color: #fff;
-    padding: 40px 0;
+    padding: 40px 30px;
 }
 
 footer a {
@@ -524,16 +522,16 @@ footer p:last-of-type {
     }
 
     /* Seconda sezione */
-    .container.flex {
-        padding: 100px 30px 30px 30px;
-    }
-
     .content-left, .content-right {
         width: 100%;
-    }
+    } 
     
     .content-left img {
         padding: 0 20px;
+    }
+
+    .content-left p {
+        padding-bottom: 30px;
     }
 
     .content-left h2 {
@@ -555,12 +553,9 @@ footer p:last-of-type {
         margin-left: auto;
     }
 
-    .about-us-right p {
-        font-size: 20px;
-    }
-
-    .button.linkedin {
-        width: 90%;
+    /* Sesta sezione */
+    .content-section p, footer p {
+        width: 80%;
     }
 
 }
@@ -583,6 +578,25 @@ footer p:last-of-type {
         flex-wrap: wrap;
     }
 
+    /* Quarta sezione */
+    .testimonials {
+        flex-wrap: wrap;
+    }
+
+    .text-testimonials {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .text-testimonials p {
+        padding-top: 10px;
+    }
+
+    .img-testimonials {
+        margin: 0 auto;
+    }
+
+    /* Quinta sezione */
     .about-us-left h2 {
         font-size: 2rem;
     }
@@ -595,37 +609,28 @@ footer p:last-of-type {
         width: 100%;
     }
 
-    .button.linkedin {
-        width: 50%;
-    }
-
-    .testimonials {
-        flex-wrap: wrap;
-    }
-
-    .text-testimonials {
+    /* Sesta sezione */
+    .content-section p, footer p {
         width: 100%;
-        text-align: center;
-    }
-
-    .text-testimonials p {
-        padding-top: 10px;
-    }
-
-    .img-testimonials {
-        margin: 0 auto;
-    }
-
-    .button.more {
-        width: 38%;
-    }
-
-    .button.linkedin {
-        width: 50%;
     }
 
     .button.get-started {
-        width: 70%;
+        padding: 20px 0;
+        display: block;
+        width: 60%;
     }
 
+}
+
+@media all and (min-width: 769px) and (max-width: 804px) {
+    .button.linkedin {
+        padding: 6px 4px;
+    }
+}
+
+@media all and (min-width: 481px) and (max-width: 724px) {
+    .button.linkedin {
+        width: 100%;
+        display: block;
+    }
 }

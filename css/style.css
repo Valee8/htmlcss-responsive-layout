@@ -622,17 +622,12 @@ footer p:last-of-type {
 
 }
 
-@media all and (min-width: 769px) and (max-width: 804px) {
-    .button.linkedin {
-        padding: 6px 4px;
-    }
-}
-
 @media all and (min-width: 481px) and (max-width: 640px) {
     
     .card h4 {
         font-size: 15px;
     } 
+    
     .card {
         padding: 10px;
     }
@@ -641,11 +636,12 @@ footer p:last-of-type {
         font-size: 50px;
     }
 } 
-
-@media all and (min-width: 481px) and (max-width: 724px) {
+ 
+@media all and (min-width: 481px) and (max-width: 830px) {
     
     .button.linkedin {
         width: 100%;
         display: block;
     }
 }
+

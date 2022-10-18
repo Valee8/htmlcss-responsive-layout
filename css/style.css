@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Sans Caption', sans-serif;
 }
 
 /* Link */
@@ -106,7 +106,7 @@ section:nth-child(even) {
 
 .planning .container {
     display: flex;
-    gap: 40px;
+    gap: 0 40px; 
     padding: 100px 130px 30px 130px;
 }
 
@@ -115,7 +115,7 @@ section:nth-child(even) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 15px;
+    gap: 20px;
 }
 
 .card {
@@ -129,12 +129,8 @@ section:nth-child(even) {
 .card.big {
     display: flex;
     justify-content: space-between;
-    width: calc((100% / 3) * 2 - 8px);
+    width: calc((100% / 3) * 2 - 5px);
     padding: 30px 30px 0 30px;
-}
-
-.card.big, .card.big + .card {
-    margin-bottom: 9px;
 }
 
 .card:not(.big) {
@@ -160,7 +156,7 @@ section:nth-child(even) {
     font-size: 20px;
 }
 
-.card:not(.big) h3 {
+.card:not(.big) h4 {
     padding-bottom: 20px;
 }
 
@@ -210,14 +206,13 @@ section:nth-child(even) {
 }
 
 .content-right {
+    align-self: flex-end;
     background-color: #fff;
     border-radius: 50px;
     padding: 20px 20px 40px 20px;
     color: #161616;
     text-align: center;
-    display: block;
     height: 100%;
-    margin-top: auto;
 }
 
 .content-right h4 {
@@ -295,32 +290,32 @@ section:nth-child(even) {
 
 .img-testimonials {
     width: 30%;
-}
+} 
 
 .text-testimonials {
-    width: 70%;
-}
+    width: 60%;
+} 
 
-.img-testimonials {
+.div-img {
     width: 200px; 
     height: 200px;
-    overflow: hidden;
-    border-radius: 50%;
 }
 
 .img-testimonials img {
+    object-fit: cover;
+    width: 100%;
     height: 100%;
-    transform: scale(1.5, 1);
+    border-radius: 50%;
 }
 
 /* Quarta sezione */
 .section-white-cards .list-cards {
-    gap: 22px;
+    gap: 30px;
 }
 
 .section-white-cards .card {
     background-color: #fff;
-    width: calc(100% / 3 - 22px);
+    width: calc(100% / 3 - 20px);
 }
 
 .section-white-cards .card h2, .section-white-cards .card h4 {
@@ -359,12 +354,6 @@ section:nth-child(even) {
     width: 30%;
 }
 
-.quotes {
-    position: relative;
-    max-width: 250px;
-    max-height: 250px;
-}
-
 .about-us-left h1 {
     color: #9792E4;
     font-size: 55px;
@@ -383,14 +372,16 @@ section:nth-child(even) {
 }
 
 .img-about {
-    max-width: 250px; 
+    position: relative;
+    max-width: 250px;
     max-height: 250px;
-    overflow: hidden;
-    border-radius: 50%;
 }
 
 .img-about img {
-    vertical-align: bottom;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .img-about i {
@@ -598,7 +589,7 @@ footer p:last-of-type {
 
     .about-us-left h1 {
         font-size: 45px;
-    }
+    } 
 
     .about-us-left, .about-us-right {
         width: 100%;
